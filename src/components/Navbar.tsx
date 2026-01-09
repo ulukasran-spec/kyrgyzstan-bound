@@ -1,49 +1,49 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Mountain } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-const navItems = [
-  { label: 'Home', href: '/' },
-  { 
-    label: 'Tours', 
-    href: '/tours',
-    submenu: [
-      { label: 'Tour Packages', href: '/tours/packages' },
-      { label: 'Day Excursions', href: '/tours/excursions' },
-      { label: 'Multi-Day Tours', href: '/tours/multi-day' },
-    ]
-  },
-  { label: 'Adventure', href: '/adventure' },
-  { label: 'Accommodations', href: '/accommodations' },
-  { label: 'About Kyrgyzstan', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-];
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { useLanguage } from '@/i18n/LanguageContext';
+import logoMmt from '@/assets/logo-mmt.png';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const { t, isRTL } = useLanguage();
+
+  const navItems = [
+    { label: t.nav.home, href: '/' },
+    { 
+      label: t.nav.tours, 
+      href: '/tours',
+      submenu: [
+        { label: t.nav.tourPackages, href: '/tours/packages' },
+        { label: t.nav.dayExcursions, href: '/tours/excursions' },
+        { label: t.nav.multiDayTours, href: '/tours/multi-day' },
+      ]
+    },
+    { label: t.nav.adventure, href: '/adventure' },
+    { label: t.nav.accommodations, href: '/accommodations' },
+    { label: t.nav.aboutKyrgyzstan, href: '/about' },
+    { label: t.nav.contact, href: '/contact' },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <Mountain className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display text-lg font-semibold text-foreground leading-tight">
-                Kyrgyz
-              </span>
-              <span className="text-xs text-primary font-medium -mt-1">Adventures</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logoMmt} 
+              alt="Mountain Magic Tours" 
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className={`hidden lg:flex items-center gap-1 ${isRTL ? 'flex-row-reverse' : ''}`}>
             {navItems.map((item) => (
               <div
                 key={item.label}
@@ -67,7 +67,7 @@ export const Navbar = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 pt-2"
+                      className={`absolute top-full ${isRTL ? 'right-0' : 'left-0'} pt-2`}
                     >
                       <div className="bg-card rounded-lg shadow-lg border border-border p-2 min-w-[200px]">
                         {item.submenu.map((subItem) => (
@@ -87,23 +87,27 @@ export const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
+          {/* CTA Buttons & Language Switcher */}
+          <div className={`hidden lg:flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
+            <LanguageSwitcher />
             <Button variant="ghost" size="sm">
-              Sign In
+              {t.nav.signIn}
             </Button>
             <Button variant="default" size="sm">
-              Book Now
+              {t.nav.bookNow}
             </Button>
           </div>
 
           {/* Mobile Menu Toggle */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-foreground"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 text-foreground"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -127,7 +131,7 @@ export const Navbar = () => {
                     {item.label}
                   </Link>
                   {item.submenu && (
-                    <div className="pl-4 space-y-1">
+                    <div className={`${isRTL ? 'pr-4' : 'pl-4'} space-y-1`}>
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.label}
@@ -144,10 +148,10 @@ export const Navbar = () => {
               ))}
               <div className="pt-4 space-y-2 border-t border-border">
                 <Button variant="outline" className="w-full">
-                  Sign In
+                  {t.nav.signIn}
                 </Button>
                 <Button className="w-full">
-                  Book Now
+                  {t.nav.bookNow}
                 </Button>
               </div>
             </div>
