@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-[1.02] hover:shadow-md active:scale-[0.98]",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:scale-[1.02] hover:shadow-md active:scale-[0.98]",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:scale-[1.02] active:scale-[0.98]",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:scale-[1.02] hover:shadow-md active:scale-[0.98]",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5",
-        heroOutline: "border-2 border-primary-foreground/30 bg-transparent text-primary-foreground backdrop-blur-sm hover:bg-primary-foreground/10 hover:border-primary-foreground/50",
-        accent: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-md hover:shadow-lg hover:-translate-y-0.5",
+        hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:scale-[1.03] active:scale-[0.98]",
+        heroOutline: "border-2 border-primary-foreground/30 bg-transparent text-primary-foreground backdrop-blur-sm hover:bg-primary-foreground/10 hover:border-primary-foreground/50 hover:-translate-y-1 hover:scale-[1.03] active:scale-[0.98]",
+        accent: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-md hover:shadow-lg hover:-translate-y-1 hover:scale-[1.03] active:scale-[0.98]",
         nav: "bg-transparent text-foreground hover:text-primary",
       },
       size: {
