@@ -62,7 +62,7 @@ export const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <img src={logoMmt} alt="Mountain Magic Tours" className="h-12 w-auto brightness-0 invert" />
+              <img src={logoMmt} alt="Mountain Magic Tours" className="h-[72px] w-auto brightness-0 invert" />
             </Link>
             <p className="text-primary-foreground/70 text-sm mb-6 max-w-xs">{t.footer.brand.description}</p>
             <div className="space-y-2 text-sm text-primary-foreground/70">
@@ -114,9 +114,9 @@ export const Footer = () => {
         <div className="container-custom py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-primary-foreground/50">{t.footer.copyright}</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"><Facebook className="w-5 h-5" /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"><Youtube className="w-5 h-5" /></a>
+            <a href="https://instagram.com/mountainmagictours" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 hover:scale-110 transition-all duration-300"><Instagram className="w-5 h-5" /></a>
+            <a href="https://facebook.com/mountainmagictours" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 hover:scale-110 transition-all duration-300"><Facebook className="w-5 h-5" /></a>
+            <a href="https://youtube.com/mountainmagictours" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 hover:scale-110 transition-all duration-300"><Youtube className="w-5 h-5" /></a>
           </div>
         </div>
       </div>

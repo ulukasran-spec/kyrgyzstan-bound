@@ -9,6 +9,7 @@ export const es = {
     adventure: 'Aventura',
     accommodations: 'Alojamiento',
     aboutKyrgyzstan: 'Sobre Kirguistán',
+    travelTips: 'Consejos de Viaje',
     contact: 'Contacto',
     signIn: 'Iniciar sesión',
     bookNow: 'Reservar ahora',
@@ -196,6 +197,7 @@ export const es = {
       privacyPolicy: 'Política de privacidad',
       travelInsurance: 'Seguro de viaje',
       visaInfo: 'Información de visa',
+      travelTips: 'Consejos de Viaje',
     },
     copyright: '© 2025 Mountain Magic Tours. Todos los derechos reservados.',
   },
@@ -203,5 +205,146 @@ export const es = {
   // Common
   common: {
     perPerson: '/persona',
+    days: 'días',
+    day: 'día',
+    nights: 'noches',
+    from: 'Desde',
+    bookNow: 'Reservar ahora',
+    viewDetails: 'Ver detalles',
+    allTours: 'Todos los tours',
+    filterBy: 'Filtrar por',
+    duration: 'Duración',
+    category: 'Categoría',
+    priceRange: 'Rango de precio',
+    search: 'Buscar',
+    noResults: 'No se encontraron tours',
+    clearFilters: 'Limpiar filtros',
+  },
+
+  // Travel Tips Page
+  travelTips: {
+    title: 'Consejos de Viaje',
+    subtitle: 'Información Esencial para tu Aventura en Kirguistán',
+    description: 'Todo lo que necesitas saber antes de llegar a Kirguistán.',
+    visa: {
+      title: 'Requisitos de Visa y Entrada',
+      items: [
+        'Ciudadanos de más de 60 países pueden entrar sin visa hasta 60 días.',
+        'E-visa disponible online por $50-100.',
+        'Permisos fronterizos requeridos cerca de Tayikistán/China ($30-50).',
+        'Sin vacunas obligatorias; consulta tu médico.',
+      ],
+    },
+    safety: {
+      title: 'Seguridad',
+      items: [
+        'Kirguistán es generalmente seguro con bajas tasas de criminalidad.',
+        'Evita mostrar grandes cantidades de efectivo.',
+        'Cuidado con carteristas en zonas concurridas.',
+        'Viste modestamente en áreas rurales.',
+      ],
+    },
+    transport: {
+      title: 'Transporte',
+      items: [
+        'Usa taxi oficial en el aeropuerto Manas.',
+        'Marshrutkas (minibuses) son baratos para viajes interurbanos.',
+        'Taxis compartidos más rápidos pero negocia precios.',
+        'Alquiler de coches posible con licencia internacional.',
+      ],
+    },
+    currency: {
+      title: 'Moneda y Dinero',
+      items: [
+        'Moneda local: Som kirguís (KGS); 1 USD ≈ 85-90 KGS.',
+        'Trae USD o Euros; cambia en bancos oficiales.',
+        'Cajeros disponibles en ciudades; lleva efectivo para áreas rurales.',
+        'Propina: 10% en restaurantes.',
+      ],
+    },
+    culture: {
+      title: 'Cultura y Etiqueta',
+      items: [
+        'Los kirguises son muy hospitalarios; acepta ofertas de té cortésmente.',
+        'Idiomas: kirguís y ruso oficiales; inglés limitado.',
+        'Quítate los zapatos en interiores.',
+        'Prueba beshbarmak, plov, kumis.',
+      ],
+    },
+    health: {
+      title: 'Salud y Consejos Prácticos',
+      items: [
+        'Mal de altura común en montañas; aclimátate lentamente.',
+        'Agua: hierve o usa embotellada.',
+        'Clima: veranos calurosos, inviernos fríos.',
+        'Empaca protector solar y repelente de insectos.',
+      ],
+    },
+  },
+
+  // Contact Page
+  contact: {
+    title: 'Contáctenos',
+    subtitle: 'Ponte en Contacto',
+    description: '¿Tienes preguntas sobre nuestros tours? ¡Estamos aquí para ayudar!',
+    info: {
+      title: 'Información de Contacto',
+      address: '123 Avenida Chui, Biskek 720001, Kirguistán',
+      email: 'info@mountainmagictours.com',
+      phone: '+996 555 123 456',
+      hours: 'Lun-Vie: 9:00 AM - 6:00 PM (Hora de Biskek)',
+    },
+    form: {
+      title: 'Envíanos un Mensaje',
+      name: 'Tu Nombre',
+      email: 'Tu Email',
+      subject: 'Asunto',
+      message: 'Tu Mensaje',
+      submit: 'Enviar Mensaje',
+      success: '¡Gracias! Tu mensaje ha sido enviado.',
+      subjects: {
+        general: 'Consulta General',
+        booking: 'Pregunta de Reserva',
+        customTour: 'Tour Personalizado',
+        feedback: 'Comentarios',
+        partnership: 'Oportunidad de Asociación',
+      },
+    },
+    social: {
+      title: 'Síguenos',
+      facebook: 'Facebook',
+      instagram: 'Instagram',
+      twitter: 'Twitter',
+    },
+  },
+
+  // Tours Page
+  toursPage: {
+    title: 'Nuestros Tours',
+    subtitle: 'Explora Kirguistán',
+    description: 'Desde excursiones de un día hasta aventuras de varias semanas.',
+    categories: {
+      all: 'Todos los Tours',
+      multiDay: 'Tours Multiday',
+      horseback: 'Paseos a Caballo',
+      trekking: 'Senderismo',
+      cultural: 'Tours Culturales',
+      family: 'Tours Familiares',
+      winter: 'Tours de Invierno',
+      biking: 'Tours en Bicicleta',
+      offroad: 'Aventuras Todoterreno',
+    },
+    filters: {
+      duration: 'Duración',
+      category: 'Categoría',
+      price: 'Rango de Precio',
+      region: 'Región',
+    },
+    durations: {
+      short: '1-3 días',
+      medium: '4-7 días',
+      long: '8-14 días',
+      extended: '15+ días',
+    },
   },
 };

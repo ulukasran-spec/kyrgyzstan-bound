@@ -6,6 +6,7 @@ import { AdventurePass } from '@/components/AdventurePass';
 import { Activities } from '@/components/Activities';
 import { Testimonials } from '@/components/Testimonials';
 import { Footer } from '@/components/Footer';
+import { BackToTop } from '@/components/BackToTop';
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Activities />
       <Testimonials />
       <Footer />
+      <BackToTop />
     </div>
   );
 };

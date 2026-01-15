@@ -9,10 +9,25 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={heroImage} alt="Issyk-Kul Lake with Tian Shan Mountains" className="w-full h-full object-cover" />
+      {/* Parallax background */}
+      <motion.div 
+        className="absolute inset-0"
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.5 }}
+      >
+        <motion.img 
+          src={heroImage} 
+          alt="Issyk-Kul Lake with Tian Shan Mountains" 
+          className="w-full h-full object-cover"
+          style={{ 
+            willChange: 'transform',
+          }}
+          initial={{ y: 0 }}
+          whileInView={{ y: 0 }}
+        />
         <div className="hero-gradient absolute inset-0" />
-      </div>
+      </motion.div>
 
       <div className="relative z-10 container-custom text-center pt-20">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="max-w-4xl mx-auto">
