@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Clock, MapPin, Star, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
+import { Link } from 'react-router-dom';
 
 interface TourCardProps {
   image: string;
@@ -11,12 +12,15 @@ interface TourCardProps {
   price: number;
   rating: number;
   reviewCount: number;
+  description?: string;
+  slug?: string;
   maxGroup?: number;
   featured?: boolean;
 }
 
-export const TourCard = ({ image, title, location, duration, price, rating, reviewCount, maxGroup = 12, featured = false }: TourCardProps) => {
+export const TourCard = ({ image, title, location, duration, price, rating, reviewCount, description, slug, maxGroup = 12, featured = false }: TourCardProps) => {
   const { t } = useLanguage();
+  const tourLink = slug ? `/tours/${slug}` : '/tours';
 
   return (
     <motion.div 
@@ -40,11 +44,12 @@ export const TourCard = ({ image, title, location, duration, price, rating, revi
           <div className="flex items-center gap-1 text-muted-foreground text-sm"><MapPin className="w-3.5 h-3.5" /><span>{location}</span></div>
           <div className="flex items-center gap-1"><Star className="w-4 h-4 fill-secondary text-secondary" /><span className="text-sm font-medium text-foreground">{rating}</span><span className="text-xs text-muted-foreground">({reviewCount})</span></div>
         </div>
-        <h3 className="font-display text-lg font-semibold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">{title}</h3>
+        <h3 className="font-display text-lg font-semibold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">{title}</h3>
+        {description && <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{description}</p>}
         <div className="flex items-center gap-1 text-muted-foreground text-sm mb-4"><Clock className="w-3.5 h-3.5" /><span>{duration}</span></div>
         <div className="flex items-center justify-between pt-4 border-t border-border">
           <div><p className="text-xs text-muted-foreground">{t.tourCard.from}</p><p className="text-xl font-bold text-foreground">${price}<span className="text-sm font-normal text-muted-foreground">{t.tourCard.perPerson}</span></p></div>
-          <Button size="sm">{t.tourCard.viewDetails}</Button>
+          <Button size="sm" asChild><Link to={tourLink}>{t.tourCard.viewDetails}</Link></Button>
         </div>
       </div>
     </motion.div>
