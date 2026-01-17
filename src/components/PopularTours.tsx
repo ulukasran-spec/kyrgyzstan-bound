@@ -11,8 +11,29 @@ export const PopularTours = () => {
   const { t } = useLanguage();
 
   const tours = [
-    { image: tourYurtCamp, title: t.tours.issykKulAdventure.title, location: t.tours.issykKulAdventure.location, duration: t.tours.issykKulAdventure.duration, price: 890, rating: 4.9, reviewCount: 127, featured: true },
-    { image: tourHorseTrek, title: t.tours.horseTrekking.title, location: t.tours.horseTrekking.location, duration: t.tours.horseTrekking.duration, price: 450, rating: 4.8, reviewCount: 89 },
+    { 
+      image: tourYurtCamp, 
+      title: t.tours.issykKulAdventure.title, 
+      location: t.tours.issykKulAdventure.location, 
+      duration: t.tours.issykKulAdventure.duration, 
+      description: "Explore pristine Issyk-Kul lake, mountains, yurts and nomadic life.",
+      slug: "issyk-kul-adventure",
+      price: 890, 
+      rating: 4.9, 
+      reviewCount: 127, 
+      featured: true 
+    },
+    { 
+      image: tourHorseTrek, 
+      title: t.tours.horseTrekking.title, 
+      location: t.tours.horseTrekking.location, 
+      duration: t.tours.horseTrekking.duration, 
+      description: "Ride through stunning red canyons of Jeti-Oguz with traditional Kyrgyz lunch.",
+      slug: "jeti-oguz-horse-trek",
+      price: 450, 
+      rating: 4.8, 
+      reviewCount: 89 
+    },
   ];
 
   return (
