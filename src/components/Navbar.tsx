@@ -34,11 +34,11 @@ export const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo - 1.5x larger */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex-shrink-0">
             <img 
               src={logoMmt} 
               alt="Mountain Magic Tours" 
-              className="h-12 sm:h-14 md:h-16 lg:h-auto lg:w-[200px] w-auto"
+              className="h-10 sm:h-12 md:h-14 lg:w-[200px] lg:h-auto w-auto"
             />
           </Link>
 
