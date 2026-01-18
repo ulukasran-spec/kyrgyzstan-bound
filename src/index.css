@@ -14,19 +14,19 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 15%;
 
-    /* Deep teal - Issyk-Kul lake */
-    --primary: 185 65% 35%;
+    /* Blue-green highlight - #00A896 */
+    --primary: 168 100% 33%;
     --primary-foreground: 0 0% 100%;
 
-    /* Warm amber - Kyrgyz textiles & sunsets */
-    --secondary: 35 85% 55%;
-    --secondary-foreground: 220 20% 15%;
+    /* Blue for buttons/links - #007BFF */
+    --secondary: 211 100% 50%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 220 10% 45%;
 
-    /* Mountain green accent */
-    --accent: 160 45% 40%;
+    /* Blue-green accent - same as primary for consistency */
+    --accent: 168 100% 33%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -113,11 +113,13 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    @apply font-semibold tracking-tight;
+    @apply font-bold tracking-tight;
+    font-weight: 600;
   }
 }
 
