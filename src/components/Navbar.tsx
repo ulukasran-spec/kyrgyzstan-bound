@@ -5,7 +5,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { useLanguage } from '@/i18n/LanguageContext';
-import logoMmt from '@/assets/logo-mmt.png';
+import logoMmt from '@/assets/logo-header-blue.png';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
