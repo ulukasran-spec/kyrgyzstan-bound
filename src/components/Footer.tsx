@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Instagram, Facebook, Youtube, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
-import logoFooterWhite from '@/assets/logo-footer-white.png';
+import logoFooter from '@/assets/logo-footer.jpg';
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -62,7 +62,7 @@ export const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <img src={logoFooterWhite} alt="Mountain Magic Tours" className="h-32 sm:h-40 md:h-48 w-auto" />
+              <img src={logoFooter} alt="Mountain Magic Tours" className="h-32 sm:h-40 md:h-48 w-auto" />
             </Link>
             <p className="text-primary-foreground/70 text-sm mb-6 max-w-xs">{t.footer.brand.description}</p>
             <div className="space-y-2 text-sm text-primary-foreground/70">
