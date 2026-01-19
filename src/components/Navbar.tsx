@@ -5,7 +5,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { useLanguage } from '@/i18n/LanguageContext';
-import logoMmt from '@/assets/logo-mmt.png';
+import logoHeader from '@/assets/logo-header.png';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +36,9 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img 
-              src={logoMmt} 
+              src={logoHeader} 
               alt="Mountain Magic Tours" 
-              className="h-16 sm:h-20 md:h-24 w-auto mix-blend-multiply"
+              className="h-16 sm:h-20 md:h-24 w-auto"
             />
           </Link>
 
