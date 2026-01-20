@@ -364,7 +364,91 @@ export const en = {
       short: '1-3 days',
       medium: '4-7 days',
       long: '8-14 days',
-      extended: '15+ days',
+    extended: '15+ days',
+    },
+  },
+
+  // Guides
+  guides: {
+    subtitle: 'Our Guides',
+    title: 'Meet Your Expert Guides',
+    description: 'Our certified local guides bring years of experience and passion to make your adventure unforgettable.',
+    pageTitle: 'Our Guides',
+    pageDescription: 'Discover our team of certified local guides ready to show you the best of Kyrgyzstan.',
+    reviews: 'reviews',
+    perDay: 'day',
+    bookGuide: 'Book Guide',
+    askar: {
+      name: 'Askar',
+      specialties: ['Horseback', 'Trekking'],
+      bio: 'Expert horseback guide with 15 years of mountain experience.',
+    },
+    aida: {
+      name: 'Aida',
+      specialties: ['Cultural Tours', 'City Tours'],
+      bio: 'Bishkek & Osh expert with deep cultural knowledge.',
+    },
+    nurlan: {
+      name: 'Nurlan',
+      specialties: ['Mountain Climbing', 'Pamir'],
+      bio: 'Certified mountaineer specializing in Pamir expeditions.',
+    },
+    gulnara: {
+      name: 'Gulnara',
+      specialties: ['Photography', 'Nature'],
+      bio: 'Professional photographer guiding scenic tours.',
+    },
+    bakyt: {
+      name: 'Bakyt',
+      specialties: ['Yurt Stays', 'Nomadic Life'],
+      bio: 'Expert in nomadic traditions and yurt camping.',
+    },
+    aizhan: {
+      name: 'Aizhan',
+      specialties: ['Skiing', 'Winter Tours'],
+      bio: 'Winter sports specialist and ski instructor.',
+    },
+    marat: {
+      name: 'Marat',
+      specialties: ['Off-road', '4x4 Tours'],
+      bio: 'Off-road expert for remote mountain destinations.',
+    },
+    dinara: {
+      name: 'Dinara',
+      specialties: ['Gastronomy', 'Cooking'],
+      bio: 'Culinary guide offering traditional food experiences.',
+    },
+    timur: {
+      name: 'Timur',
+      specialties: ['Biking', 'Cycling'],
+      bio: 'Mountain biking expert for all skill levels.',
+    },
+    cholpon: {
+      name: 'Cholpon',
+      specialties: ['Family Tours', 'Kids'],
+      bio: 'Specialized in family-friendly adventures.',
+    },
+  },
+
+  // New Tours
+  newTours: {
+    songKolKarakol: {
+      title: 'Weekly Trip to Song-Kol and Karakol',
+      location: 'Song-Kol & Karakol',
+      duration: '5 Days / 4 Nights',
+      description: 'Explore pristine alpine lakes and immerse yourself in Kyrgyz culture.',
+    },
+    almatyBishkek: {
+      title: 'From Almaty to Bishkek',
+      location: 'Kazakhstan - Kyrgyzstan',
+      duration: '6 Days / 5 Nights',
+      description: 'Cross-border adventure through stunning mountain passes and alpine lakes.',
+    },
+    horsebackSongKol: {
+      title: '3-Day Horseback Adventure to Song-Kol',
+      location: 'Song-Kol Lake',
+      duration: '3 Days / 2 Nights',
+      description: 'Experience traditional nomadic horseback riding to the alpine lake.',
     },
   },
 };
