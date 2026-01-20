@@ -11,6 +11,7 @@ export const es = {
     aboutKyrgyzstan: 'Sobre Kirguistán',
     travelTips: 'Consejos de Viaje',
     contact: 'Contacto',
+    guides: 'Guías',
     signIn: 'Iniciar sesión',
     bookNow: 'Reservar ahora',
   },

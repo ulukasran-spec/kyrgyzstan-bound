@@ -11,6 +11,7 @@ export const ar = {
     aboutKyrgyzstan: 'عن قيرغيزستان',
     travelTips: 'نصائح السفر',
     contact: 'اتصل بنا',
+    guides: 'المرشدون',
     signIn: 'تسجيل الدخول',
     bookNow: 'احجز الآن',
   },

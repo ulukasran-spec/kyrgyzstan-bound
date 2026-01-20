@@ -11,6 +11,7 @@ export const ru = {
     aboutKyrgyzstan: 'О Кыргызстане',
     travelTips: 'Советы туристам',
     contact: 'Контакты',
+    guides: 'Гиды',
     signIn: 'Войти',
     bookNow: 'Забронировать',
   },
