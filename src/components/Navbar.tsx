@@ -24,6 +24,7 @@ export const Navbar = () => {
       ]
     },
     { label: t.nav.adventure, href: '/adventure' },
+    { label: t.nav.guides || 'Guides', href: '/guides' },
     { label: t.nav.accommodations, href: '/accommodations' },
     { label: t.nav.aboutKyrgyzstan, href: '/about' },
     { label: t.nav.contact, href: '/contact' },

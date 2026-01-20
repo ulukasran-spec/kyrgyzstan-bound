@@ -11,6 +11,7 @@ export const en = {
     aboutKyrgyzstan: 'About Kyrgyzstan',
     travelTips: 'Travel Tips',
     contact: 'Contact',
+    guides: 'Guides',
     signIn: 'Sign In',
     bookNow: 'Book Now',
   },
