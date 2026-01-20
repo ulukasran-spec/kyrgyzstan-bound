@@ -347,4 +347,88 @@ export const es = {
       extended: '15+ días',
     },
   },
+
+  // Guides
+  guides: {
+    subtitle: 'Nuestros Guías',
+    title: 'Conoce a Nuestros Guías Expertos',
+    description: 'Nuestros guías locales certificados aportan años de experiencia y pasión para hacer tu aventura inolvidable.',
+    pageTitle: 'Nuestros Guías',
+    pageDescription: 'Descubre nuestro equipo de guías locales certificados listos para mostrarte lo mejor de Kirguistán.',
+    reviews: 'reseñas',
+    perDay: 'día',
+    bookGuide: 'Reservar Guía',
+    askar: {
+      name: 'Askar',
+      specialties: ['Equitación', 'Senderismo'],
+      bio: 'Guía ecuestre experto con 15 años de experiencia en montaña.',
+    },
+    aida: {
+      name: 'Aida',
+      specialties: ['Tours Culturales', 'Tours de Ciudad'],
+      bio: 'Experta en Bishkek y Osh con profundo conocimiento cultural.',
+    },
+    nurlan: {
+      name: 'Nurlan',
+      specialties: ['Alpinismo', 'Pamir'],
+      bio: 'Montañero certificado especializado en expediciones al Pamir.',
+    },
+    gulnara: {
+      name: 'Gulnara',
+      specialties: ['Fotografía', 'Naturaleza'],
+      bio: 'Fotógrafa profesional guiando tours panorámicos.',
+    },
+    bakyt: {
+      name: 'Bakyt',
+      specialties: ['Estancias en Yurta', 'Vida Nómada'],
+      bio: 'Experto en tradiciones nómadas y campamentos en yurta.',
+    },
+    aizhan: {
+      name: 'Aizhan',
+      specialties: ['Esquí', 'Tours de Invierno'],
+      bio: 'Especialista en deportes de invierno e instructor de esquí.',
+    },
+    marat: {
+      name: 'Marat',
+      specialties: ['Todoterreno', 'Tours 4x4'],
+      bio: 'Experto en todoterreno para destinos remotos de montaña.',
+    },
+    dinara: {
+      name: 'Dinara',
+      specialties: ['Gastronomía', 'Cocina'],
+      bio: 'Guía culinaria ofreciendo experiencias gastronómicas tradicionales.',
+    },
+    timur: {
+      name: 'Timur',
+      specialties: ['Ciclismo', 'Bicicleta'],
+      bio: 'Experto en ciclismo de montaña para todos los niveles.',
+    },
+    cholpon: {
+      name: 'Cholpon',
+      specialties: ['Tours Familiares', 'Niños'],
+      bio: 'Especializada en aventuras familiares.',
+    },
+  },
+
+  // New Tours
+  newTours: {
+    songKolKarakol: {
+      title: 'Viaje Semanal a Song-Kol y Karakol',
+      location: 'Song-Kol y Karakol',
+      duration: '5 Días / 4 Noches',
+      description: 'Explora lagos alpinos prístinos y sumérgete en la cultura kirguisa.',
+    },
+    almatyBishkek: {
+      title: 'De Almaty a Bishkek',
+      location: 'Kazajstán - Kirguistán',
+      duration: '6 Días / 5 Noches',
+      description: 'Aventura transfronteriza a través de impresionantes pasos de montaña y lagos.',
+    },
+    horsebackSongKol: {
+      title: 'Aventura a Caballo de 3 Días a Song-Kol',
+      location: 'Lago Song-Kol',
+      duration: '3 Días / 2 Noches',
+      description: 'Experimenta la equitación nómada tradicional hacia el lago alpino.',
+    },
+  },
 };
