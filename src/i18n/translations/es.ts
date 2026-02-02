@@ -224,61 +224,74 @@ export const es = {
 
   // Travel Tips Page
   travelTips: {
-    title: 'Consejos de Viaje',
-    subtitle: 'Información Esencial para tu Aventura en Kirguistán',
-    description: 'Todo lo que necesitas saber antes de llegar a Kirguistán.',
+    title: 'Consejos de Viaje y FAQ',
+    subtitle: 'Información Esencial para Turistas',
+    description: 'Todo lo que necesitas saber antes de visitar Kirguistán. Consejos prácticos, costos e información privilegiada.',
+    
     visa: {
-      title: 'Requisitos de Visa y Entrada',
+      title: 'Visa y Entrada',
       items: [
-        'Ciudadanos de más de 60 países pueden entrar sin visa hasta 60 días.',
-        'E-visa disponible online por $50-100.',
-        'Permisos fronterizos requeridos cerca de Tayikistán/China ($30-50).',
-        'Sin vacunas obligatorias; consulta tu médico.',
+        'Acceso sin visa por 60 días para más de 60 países (UE, EE.UU., Reino Unido, Australia, etc.)',
+        'E-visa disponible en línea por $50–100 para otras nacionalidades',
+        'Permisos fronterizos requeridos para áreas restringidas cerca de Tayikistán, China o Kazajistán ($30–50 vía operador turístico)',
+        'Sin vacunas obligatorias, pero mantén las rutinarias actualizadas (Hepatitis A, Tétanos)',
       ],
     },
+    
     safety: {
       title: 'Seguridad',
       items: [
-        'Kirguistán es generalmente seguro con bajas tasas de criminalidad.',
-        'Evita mostrar grandes cantidades de efectivo.',
-        'Cuidado con carteristas en zonas concurridas.',
-        'Viste modestamente en áreas rurales.',
+        'Generalmente seguro para turistas con bajas tasas de criminalidad',
+        'Ten precaución en Bishkek de noche, especialmente cerca de bazares concurridos como Osh Bazaar',
+        'Bajo riesgo de terrorismo, pero mantente informado sobre alertas para regiones del sur',
+        'Evita mostrar grandes cantidades de efectivo; usa taxis oficiales o transporte prearreglado',
+        'Mujeres viajeras: viste modestamente en áreas rurales; viajar sola es seguro pero únete a grupos para caminatas remotas',
       ],
     },
+    
     transport: {
       title: 'Transporte',
       items: [
-        'Usa taxi oficial en el aeropuerto Manas.',
-        'Marshrutkas (minibuses) son baratos para viajes interurbanos.',
-        'Taxis compartidos más rápidos pero negocia precios.',
-        'Alquiler de coches posible con licencia internacional.',
+        'Aeropuerto Manas: Usa el mostrador oficial de taxis (~1000 som al centro de Bishkek)',
+        'Marshrutkas (minibuses): 400–500 som de Bishkek a Karakol (5-6 horas)',
+        'Taxis compartidos: Más rápidos, negocia precios (500–700 som por persona)',
+        'Vuelos domésticos: Tez Jet ofrece Bishkek–Osh por ~$30–50 (1 hora)',
+        'Alquiler de 4x4 recomendado para carreteras de montaña',
+        'Autoestop: Común y generalmente seguro en áreas rurales',
       ],
     },
+    
     currency: {
-      title: 'Moneda y Dinero',
+      title: 'Moneda',
       items: [
-        'Moneda local: Som kirguís (KGS); 1 USD ≈ 85-90 KGS.',
-        'Trae USD o Euros; cambia en bancos oficiales.',
-        'Cajeros disponibles en ciudades; lleva efectivo para áreas rurales.',
-        'Propina: 10% en restaurantes.',
+        'Moneda local: Som kirguís (KGS); 1 USD ≈ 85–90 KGS',
+        'Cambia USD o Euros en bancos o casas de cambio oficiales en Bishkek/Osh',
+        'Cajeros automáticos ampliamente disponibles en ciudades (dispensan KGS o USD)',
+        'Efectivo esencial para áreas rurales y mercados',
+        'Tarjetas aceptadas solo en hoteles y restaurantes de ciudades',
+        'Propina: 10% en restaurantes, redondea para taxis',
       ],
     },
+    
     culture: {
       title: 'Cultura y Etiqueta',
       items: [
-        'Los kirguises son muy hospitalarios; acepta ofertas de té cortésmente.',
-        'Idiomas: kirguís y ruso oficiales; inglés limitado.',
-        'Quítate los zapatos en interiores.',
-        'Prueba beshbarmak, plov, kumis.',
+        'Los kirguises son muy hospitalarios – acepta el té y la comida con gracia',
+        'Quítate los zapatos al entrar a las casas',
+        'El ruso básico es útil; el inglés es limitado fuera de zonas turísticas',
+        'Debes probar: Beshbarmak (carne y fideos), Plov (arroz), Kumis (leche de yegua fermentada)',
+        'Respeta las tradiciones nómadas y a los mayores',
       ],
     },
+    
     health: {
-      title: 'Salud y Consejos Prácticos',
+      title: 'Salud y Equipaje',
       items: [
-        'Mal de altura común en montañas; aclimátate lentamente.',
-        'Agua: hierve o usa embotellada.',
-        'Clima: veranos calurosos, inviernos fríos.',
-        'Empaca protector solar y repelente de insectos.',
+        'El mal de altura es común en Song-Kul (3000m) – aclimátate lentamente y mantente hidratado',
+        'Bebe solo agua embotellada o hervida; evita el agua del grifo',
+        'Clima: Veranos calurosos (hasta 35°C), inviernos fríos (-20°C); empaca capas para montañas',
+        'Esenciales: Protector solar, repelente de insectos, zapatos cómodos para caminar',
+        'Viste modestamente al visitar mezquitas o aldeas rurales',
       ],
     },
   },
