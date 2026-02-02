@@ -445,4 +445,18 @@ export const ar = {
       description: 'اختبر ركوب الخيل البدوي التقليدي إلى البحيرة الألبية.',
     },
   },
+
+  // Tour Detail Page
+  tourDetail: {
+    notFound: 'الجولة غير موجودة',
+    notFoundDescription: 'الجولة التي تبحث عنها غير موجودة.',
+    backToTours: 'العودة إلى الجولات',
+    back: 'رجوع',
+    highlights: 'أبرز معالم الجولة',
+    itinerary: 'برنامج الرحلة اليومي',
+    day: 'اليوم',
+    included: 'ما هو مشمول',
+    notIncluded: 'غير مشمول',
+    freeCancel: 'إلغاء مجاني حتى 48 ساعة قبل الموعد',
+  },
 };

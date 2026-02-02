@@ -451,4 +451,18 @@ export const ru = {
       description: 'Испытайте традиционную кочевую верховую езду к альпийскому озеру.',
     },
   },
+
+  // Tour Detail Page
+  tourDetail: {
+    notFound: 'Тур не найден',
+    notFoundDescription: 'Тур, который вы ищете, не существует.',
+    backToTours: 'Назад к турам',
+    back: 'Назад',
+    highlights: 'Особенности тура',
+    itinerary: 'Маршрут по дням',
+    day: 'День',
+    included: 'Что включено',
+    notIncluded: 'Не включено',
+    freeCancel: 'Бесплатная отмена за 48 часов',
+  },
 };
