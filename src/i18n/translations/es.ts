@@ -445,4 +445,18 @@ export const es = {
       description: 'Experimenta la equitación nómada tradicional hacia el lago alpino.',
     },
   },
+
+  // Tour Detail Page
+  tourDetail: {
+    notFound: 'Tour no encontrado',
+    notFoundDescription: 'El tour que buscas no existe.',
+    backToTours: 'Volver a Tours',
+    back: 'Volver',
+    highlights: 'Destacados del Tour',
+    itinerary: 'Itinerario Día a Día',
+    day: 'Día',
+    included: 'Qué está incluido',
+    notIncluded: 'No incluido',
+    freeCancel: 'Cancelación gratuita hasta 48 horas antes',
+  },
 };

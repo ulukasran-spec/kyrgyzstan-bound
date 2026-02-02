@@ -451,4 +451,18 @@ export const en = {
       description: 'Experience traditional nomadic horseback riding to the alpine lake.',
     },
   },
+
+  // Tour Detail Page
+  tourDetail: {
+    notFound: 'Tour not found',
+    notFoundDescription: 'The tour you are looking for does not exist.',
+    backToTours: 'Back to Tours',
+    back: 'Back',
+    highlights: 'Tour Highlights',
+    itinerary: 'Day-by-Day Itinerary',
+    day: 'Day',
+    included: "What's Included",
+    notIncluded: 'Not Included',
+    freeCancel: 'Free cancellation up to 48 hours before',
+  },
 };

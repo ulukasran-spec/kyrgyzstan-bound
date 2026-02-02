@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import GuidesPage from "./pages/GuidesPage";
 import TravelTipsPage from "./pages/TravelTipsPage";
+import TourDetailPage from "./pages/TourDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/guides" element={<GuidesPage />} />
           <Route path="/travel-tips" element={<TravelTipsPage />} />
+          <Route path="/tours/:slug" element={<TourDetailPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
