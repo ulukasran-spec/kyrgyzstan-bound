@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
-import { NomadGamesBanner } from '@/components/NomadGamesBanner';
 import { PopularTours } from '@/components/PopularTours';
 import { Excursions } from '@/components/Excursions';
 import { AdventurePass } from '@/components/AdventurePass';
@@ -14,7 +13,6 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <NomadGamesBanner />
       <PopularTours />
       <Excursions />
       <AdventurePass />

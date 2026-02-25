@@ -32,7 +32,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
+    <nav className="fixed top-[36px] left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -40,7 +40,7 @@ export const Navbar = () => {
             <img 
               src={logoMmt} 
               alt="Mountain Magic Tours" 
-              className="w-[140px] sm:w-[180px] md:w-[220px] h-auto mix-blend-multiply"
+              className="h-12 w-auto object-contain"
             />
           </Link>
 
