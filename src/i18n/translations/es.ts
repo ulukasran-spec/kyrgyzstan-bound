@@ -446,6 +446,18 @@ export const es = {
     },
   },
 
+  heroSlides: {
+    slide1: 'Kirguistán: Siente el Aire de los Nómadas',
+    slide2: 'Descubre la Antigua Cultura Nómada',
+    slide3: 'Lagos Alpinos Prístinos y Aventuras',
+    slide4: '¡Únete a los Juegos Mundiales Nómadas 2026 – Septiembre en Cholpon-Ata!',
+    slide5: 'Épicos Trekkings y Viajes a Caballo',
+  },
+
+  nomadGames: {
+    banner: '¡No te pierdas los Juegos Mundiales Nómadas 2026 (septiembre)! Combina con tu tour – ¡cultura nómada épica y competiciones!',
+  },
+
   // Tour Detail Page
   tourDetail: {
     notFound: 'Tour no encontrado',

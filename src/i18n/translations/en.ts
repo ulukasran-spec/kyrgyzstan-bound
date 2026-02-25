@@ -452,6 +452,20 @@ export const en = {
     },
   },
 
+  // Hero Slides
+  heroSlides: {
+    slide1: 'Kyrgyzstan: Feel the Air of Nomads',
+    slide2: 'Discover Ancient Nomadic Culture',
+    slide3: 'Pristine Alpine Lakes & Adventures',
+    slide4: 'Join World Nomad Games 2026 – September in Cholpon-Ata!',
+    slide5: 'Epic Treks & Horseback Journeys',
+  },
+
+  // Nomad Games Banner
+  nomadGames: {
+    banner: "Don't miss World Nomad Games 2026 (September)! Combine with your tour – epic nomadic culture & competitions!",
+  },
+
   // Tour Detail Page
   tourDetail: {
     notFound: 'Tour not found',
