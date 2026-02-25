@@ -1,50 +1,77 @@
-import { motion } from 'framer-motion';
+import { useState, useEffect, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Calendar, Users, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
 import heroImage from '@/assets/hero-issyk-kul.jpg';
+import tourSongKul from '@/assets/tour-song-kul.jpg';
+import tourHorseTrek from '@/assets/tour-horse-trek.jpg';
+import tourYurtCamp from '@/assets/tour-yurt-camp.jpg';
+import tourAlaArcha from '@/assets/tour-ala-archa.jpg';
+
+const slideImages = [heroImage, tourSongKul, heroImage, tourYurtCamp, tourHorseTrek];
 
 export const Hero = () => {
   const { t } = useLanguage();
+  const [current, setCurrent] = useState(0);
+
+  const slides = [
+    { image: slideImages[0], title: t.heroSlides?.slide1 || 'Kyrgyzstan: Feel the Air of Nomads' },
+    { image: slideImages[1], title: t.heroSlides?.slide2 || 'Discover Ancient Nomadic Culture' },
+    { image: slideImages[2], title: t.heroSlides?.slide3 || 'Pristine Alpine Lakes & Adventures' },
+    { image: slideImages[3], title: t.heroSlides?.slide4 || 'Join World Nomad Games 2026 – September in Cholpon-Ata!' },
+    { image: slideImages[4], title: t.heroSlides?.slide5 || 'Epic Treks & Horseback Journeys' },
+  ];
+
+  const next = useCallback(() => setCurrent((p) => (p + 1) % slides.length), [slides.length]);
+
+  useEffect(() => {
+    const timer = setInterval(next, 4500);
+    return () => clearInterval(timer);
+  }, [next]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Parallax background */}
-      <motion.div 
-        className="absolute inset-0"
-        initial={{ scale: 1.1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1.5 }}
-      >
-        <motion.img 
-          src={heroImage} 
-          alt="Issyk-Kul Lake with Tian Shan Mountains" 
-          className="w-full h-full object-cover"
-          style={{ 
-            willChange: 'transform',
-          }}
-          initial={{ y: 0 }}
-          whileInView={{ y: 0 }}
-        />
-        <div className="hero-gradient absolute inset-0" />
-      </motion.div>
+      {/* Slideshow background */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={current}
+          className="absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <img
+            src={slides[current].image}
+            alt={slides[current].title}
+            className="w-full h-full object-cover"
+          />
+          <div className="hero-gradient absolute inset-0" />
+          <div className="absolute inset-0 bg-foreground/30" />
+        </motion.div>
+      </AnimatePresence>
 
       <div className="relative z-10 container-custom text-center pt-20">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="max-w-4xl mx-auto">
           <span className="inline-block px-4 py-1.5 bg-primary/20 backdrop-blur-sm text-primary-foreground text-sm font-medium rounded-full mb-6 border border-primary-foreground/20">
             {t.hero.badge}
           </span>
-          
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-6 leading-tight">
-            {t.hero.title}{' '}
-            <span className="relative">
-              {t.hero.titleHighlight}
-              <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
-                <path d="M2 8C50 4 100 2 150 4C200 6 250 8 298 6" stroke="hsl(var(--secondary))" strokeWidth="3" strokeLinecap="round"/>
-              </svg>
-            </span>
-          </h1>
-          
+
+          {/* Animated slide title */}
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={current}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.6 }}
+              className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-6 leading-tight"
+            >
+              {slides[current].title}
+            </motion.h1>
+          </AnimatePresence>
+
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto">{t.hero.description}</p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -52,6 +79,17 @@ export const Hero = () => {
             <Button variant="heroOutline" size="xl">{t.hero.planTrip}</Button>
           </div>
         </motion.div>
+
+        {/* Slide indicators */}
+        <div className="flex justify-center gap-2 mb-8">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === current ? 'bg-primary-foreground w-8' : 'bg-primary-foreground/40'}`}
+            />
+          ))}
+        </div>
 
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="max-w-4xl mx-auto">
           <div className="bg-card/95 backdrop-blur-lg rounded-2xl shadow-lg p-4 md:p-6 border border-border/50">

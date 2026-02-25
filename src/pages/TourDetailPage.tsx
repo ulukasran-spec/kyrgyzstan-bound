@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { getTourBySlug } from '@/data/toursData';
+import { NomadGamesBanner } from '@/components/NomadGamesBanner';
 import { useLanguage } from '@/i18n/LanguageContext';
 
 const TourDetailPage = () => {
@@ -248,6 +249,7 @@ const TourDetailPage = () => {
         </div>
       </div>
 
+      <NomadGamesBanner />
       <Footer />
     </div>
   );
