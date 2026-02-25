@@ -463,7 +463,8 @@ export const en = {
 
   // Nomad Games Banner
   nomadGames: {
-    banner: "Don't miss World Nomad Games 2026 (September)! Combine with your tour – epic nomadic culture & competitions!",
+    banner: "🏇 Don't miss World Nomad Games 2026 (September)! Combine with your tour – epic nomadic culture & competitions!",
+    explore: 'Explore',
   },
 
   // Tour Detail Page

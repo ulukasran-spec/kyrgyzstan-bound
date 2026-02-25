@@ -455,7 +455,8 @@ export const es = {
   },
 
   nomadGames: {
-    banner: '¡No te pierdas los Juegos Mundiales Nómadas 2026 (septiembre)! Combina con tu tour – ¡cultura nómada épica y competiciones!',
+    banner: '🏇 ¡No te pierdas los Juegos Mundiales Nómadas 2026 (septiembre)! Combina con tu tour – ¡cultura nómada épica y competiciones!',
+    explore: 'Explorar',
   },
 
   // Tour Detail Page
