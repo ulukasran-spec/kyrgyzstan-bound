@@ -40,7 +40,7 @@ export const Navbar = () => {
             <img 
               src={logoMmt} 
               alt="Mountain Magic Tours" 
-              className="h-12 w-auto object-contain"
+              className="w-[140px] sm:w-[180px] md:w-[250px] h-auto object-contain"
             />
           </Link>
 

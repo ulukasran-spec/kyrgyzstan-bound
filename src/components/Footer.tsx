@@ -62,7 +62,7 @@ export const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           <div className="col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <img src={logoFooter} alt="Mountain Magic Tours" className="w-[160px] sm:w-[200px] md:w-[240px] h-auto" />
+              <img src={logoFooter} alt="Mountain Magic Tours" className="w-[180px] sm:w-[220px] md:w-[280px] h-auto" />
             </Link>
             <p className="text-primary-foreground/70 text-sm mb-6 max-w-xs">{t.footer.brand.description}</p>
             <div className="space-y-2 text-sm text-primary-foreground/70">
