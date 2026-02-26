@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Calendar, Users, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { HeroSearchForm } from '@/components/HeroSearchForm';
 import { useLanguage } from '@/i18n/LanguageContext';
 import heroImage from '@/assets/hero-issyk-kul.jpg';
 import tourSongKul from '@/assets/tour-song-kul.jpg';
@@ -92,35 +92,7 @@ export const Hero = () => {
         </div>
 
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }} className="max-w-4xl mx-auto">
-          <div className="bg-card/95 backdrop-blur-lg rounded-2xl shadow-lg p-4 md:p-6 border border-border/50">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              <div className="flex items-center gap-3 px-4 py-3 bg-muted rounded-xl">
-                <MapPin className="w-5 h-5 text-primary" />
-                <div className="text-start">
-                  <p className="text-xs text-muted-foreground">{t.hero.whereTo}</p>
-                  <p className="text-sm font-medium text-foreground">{t.hero.allDestinations}</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 px-4 py-3 bg-muted rounded-xl">
-                <Calendar className="w-5 h-5 text-primary" />
-                <div className="text-start">
-                  <p className="text-xs text-muted-foreground">{t.hero.when}</p>
-                  <p className="text-sm font-medium text-foreground">{t.hero.selectDates}</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 px-4 py-3 bg-muted rounded-xl">
-                <Users className="w-5 h-5 text-primary" />
-                <div className="text-start">
-                  <p className="text-xs text-muted-foreground">{t.hero.travelers}</p>
-                  <p className="text-sm font-medium text-foreground">{t.hero.adults}</p>
-                </div>
-              </div>
-              <Button size="lg" className="h-full min-h-[52px] gap-2">
-                <Search className="w-4 h-4" />
-                {t.hero.searchTours}
-              </Button>
-            </div>
-          </div>
+          <HeroSearchForm />
         </motion.div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.8 }} className="flex flex-wrap justify-center gap-8 md:gap-16 mt-12">
