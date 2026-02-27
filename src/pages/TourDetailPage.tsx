@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, MapPin, Star, Users, Check, X, Calendar } from 'lucide-react';
@@ -6,7 +7,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { getTourBySlug } from '@/data/toursData';
-
+import { TourGallery } from '@/components/TourGallery';
+import { BookingFormModal } from '@/components/BookingFormModal';
 import { useLanguage } from '@/i18n/LanguageContext';
 
 const TourDetailPage = () => {
@@ -14,6 +16,7 @@ const TourDetailPage = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
   
+  const [bookingOpen, setBookingOpen] = useState(false);
   const tour = slug ? getTourBySlug(slug) : undefined;
 
   if (!tour) {
@@ -163,6 +166,9 @@ const TourDetailPage = () => {
               </div>
             </motion.div>
 
+            {/* Gallery */}
+            <TourGallery tourTitle={tour.title} />
+
             {/* Included / Not Included */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -237,7 +243,7 @@ const TourDetailPage = () => {
                 </div>
               </div>
 
-              <Button size="lg" className="w-full mb-3">
+              <Button size="lg" className="w-full mb-3" onClick={() => setBookingOpen(true)}>
                 {t.common.bookNow}
               </Button>
               
@@ -249,7 +255,12 @@ const TourDetailPage = () => {
         </div>
       </div>
 
-      
+      <BookingFormModal
+        open={bookingOpen}
+        onClose={() => setBookingOpen(false)}
+        tourTitle={tour.title}
+        tourPrice={tour.price}
+      />
       <Footer />
     </div>
   );
