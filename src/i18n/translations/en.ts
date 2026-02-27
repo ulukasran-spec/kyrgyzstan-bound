@@ -6,7 +6,7 @@ export const en = {
     tourPackages: 'Tour Packages',
     dayExcursions: 'Day Excursions',
     multiDayTours: 'Multi-Day Tours',
-    adventure: 'Adventure',
+    adventure: 'Expeditions',
     accommodations: 'Accommodations',
     aboutKyrgyzstan: 'About Kyrgyzstan',
     travelTips: 'Travel Tips',
@@ -138,8 +138,8 @@ export const en = {
       description: 'Experience nomadic traditions on horseback across alpine meadows.',
     },
     paragliding: {
-      title: 'Paragliding',
-      description: 'Soar above stunning valleys with breathtaking aerial views.',
+      title: 'Ski Touring',
+      description: 'Winter ski adventures in Kyrgyz mountains.',
     },
     yurtCamping: {
       title: 'Yurt Camping',

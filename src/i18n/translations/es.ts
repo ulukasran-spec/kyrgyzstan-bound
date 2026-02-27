@@ -6,7 +6,7 @@ export const es = {
     tourPackages: 'Paquetes turísticos',
     dayExcursions: 'Excursiones de un día',
     multiDayTours: 'Tours de varios días',
-    adventure: 'Aventura',
+    adventure: 'Expediciones',
     accommodations: 'Alojamiento',
     aboutKyrgyzstan: 'Sobre Kirguistán',
     travelTips: 'Consejos de Viaje',
@@ -138,8 +138,8 @@ export const es = {
       description: 'Experimenta las tradiciones nómadas a caballo por praderas alpinas.',
     },
     paragliding: {
-      title: 'Parapente',
-      description: 'Vuela sobre valles impresionantes con vistas aéreas espectaculares.',
+      title: 'Esquí de travesía',
+      description: 'Aventuras de esquí invernal en las montañas de Kirguistán.',
     },
     yurtCamping: {
       title: 'Camping en yurta',

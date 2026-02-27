@@ -6,7 +6,7 @@ export const ar = {
     tourPackages: 'باقات الرحلات',
     dayExcursions: 'رحلات يوم واحد',
     multiDayTours: 'رحلات متعددة الأيام',
-    adventure: 'المغامرات',
+    adventure: 'البعثات',
     accommodations: 'الإقامة',
     aboutKyrgyzstan: 'عن قيرغيزستان',
     travelTips: 'نصائح السفر',
@@ -138,8 +138,8 @@ export const ar = {
       description: 'عش تقاليد البدو على ظهر الخيل عبر المروج الجبلية.',
     },
     paragliding: {
-      title: 'الطيران الشراعي',
-      description: 'حلّق فوق الوديان المذهلة مع مناظر جوية خلابة.',
+      title: 'التزلج الجبلي',
+      description: 'مغامرات التزلج الشتوية في جبال قيرغيزستان.',
     },
     yurtCamping: {
       title: 'التخييم في اليورت',

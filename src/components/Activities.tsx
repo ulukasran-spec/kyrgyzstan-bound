@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Compass, Mountain, Waves, Tent, Camera, Bike } from 'lucide-react';
+import { Compass, Mountain, Snowflake, Tent, Camera, Bike } from 'lucide-react';
 import { SectionHeader } from './SectionHeader';
 import { useLanguage } from '@/i18n/LanguageContext';
 
@@ -9,7 +9,7 @@ export const Activities = () => {
   const activities = [
     { icon: Mountain, title: t.activities.trekking.title, description: t.activities.trekking.description, count: 24 },
     { icon: Compass, title: t.activities.horseRiding.title, description: t.activities.horseRiding.description, count: 18 },
-    { icon: Waves, title: t.activities.paragliding.title, description: t.activities.paragliding.description, count: 6 },
+    { icon: Snowflake, title: t.activities.paragliding.title, description: t.activities.paragliding.description, count: 10 },
     { icon: Tent, title: t.activities.yurtCamping.title, description: t.activities.yurtCamping.description, count: 15 },
     { icon: Camera, title: t.activities.photography.title, description: t.activities.photography.description, count: 8 },
     { icon: Bike, title: t.activities.biking.title, description: t.activities.biking.description, count: 12 },
