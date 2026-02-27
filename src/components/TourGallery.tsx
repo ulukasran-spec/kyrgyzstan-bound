@@ -5,14 +5,10 @@ interface TourGalleryProps {
   tourTitle: string;
 }
 
-const placeholderImages = [
-  '/images/tour-gallery/placeholder1.jpg',
-  '/images/tour-gallery/placeholder2.jpg',
-  '/images/tour-gallery/placeholder3.jpg',
-  '/images/tour-gallery/placeholder4.jpg',
-  '/images/tour-gallery/placeholder5.jpg',
-  '/images/tour-gallery/placeholder6.jpg',
-];
+const placeholderImages = Array.from({ length: 6 }, (_, i) => ({
+  src: '/placeholder.svg',
+  label: `Photo ${i + 1}`,
+}));
 
 export const TourGallery = ({ tourTitle }: TourGalleryProps) => {
   return (
@@ -27,23 +23,14 @@ export const TourGallery = ({ tourTitle }: TourGalleryProps) => {
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {placeholderImages.map((src, i) => (
+        {placeholderImages.map((item, i) => (
           <div
             key={i}
             className="aspect-[4/3] rounded-xl overflow-hidden bg-muted flex items-center justify-center border border-border"
           >
-            <img
-              src={src}
-              alt={`${tourTitle} photo ${i + 1}`}
-              className="w-full h-full object-cover hidden"
-              onLoad={(e) => {
-                (e.target as HTMLImageElement).classList.remove('hidden');
-                (e.target as HTMLImageElement).nextElementSibling?.classList.add('hidden');
-              }}
-            />
             <div className="flex flex-col items-center gap-2 text-muted-foreground">
               <ImageIcon className="w-8 h-8" />
-              <span className="text-xs">Photo {i + 1}</span>
+              <span className="text-xs">{item.label}</span>
             </div>
           </div>
         ))}
