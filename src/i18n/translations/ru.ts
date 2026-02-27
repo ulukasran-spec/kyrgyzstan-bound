@@ -6,7 +6,7 @@ export const ru = {
     tourPackages: 'Турпакеты',
     dayExcursions: 'Однодневные экскурсии',
     multiDayTours: 'Многодневные туры',
-    adventure: 'Приключения',
+    adventure: 'Экспедиции',
     accommodations: 'Размещение',
     aboutKyrgyzstan: 'О Кыргызстане',
     travelTips: 'Советы туристам',
@@ -138,8 +138,8 @@ export const ru = {
       description: 'Прочувствуйте кочевые традиции верхом на лошадях по альпийским лугам.',
     },
     paragliding: {
-      title: 'Параглайдинг',
-      description: 'Парите над потрясающими долинами с захватывающими видами.',
+      title: 'Ски-тур',
+      description: 'Зимние лыжные приключения в горах Кыргызстана.',
     },
     yurtCamping: {
       title: 'Ночёвка в юрте',

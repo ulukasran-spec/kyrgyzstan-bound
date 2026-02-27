@@ -4,59 +4,58 @@
 
 @layer base {
   :root {
-    /* Main brand colors - Inspired by Kyrgyzstan's lakes and mountains */
+    /* Main brand colors - Dark Blue #1E3A5F, Light Blue #AFC7D9, White #FFF, Soft Gray #F5F7FA */
     --background: 0 0% 100%;
-    --foreground: 220 20% 15%;
+    --foreground: 214 52% 24%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card-foreground: 214 52% 24%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover-foreground: 214 52% 24%;
 
-    /* Blue-green highlight - #00A896 */
-    --primary: 168 100% 33%;
+    /* Dark Blue #1E3A5F */
+    --primary: 214 52% 24%;
     --primary-foreground: 0 0% 100%;
 
-    /* Blue for buttons/links - #007BFF */
-    --secondary: 211 100% 50%;
-    --secondary-foreground: 0 0% 100%;
+    /* Light Blue #AFC7D9 */
+    --secondary: 207 33% 77%;
+    --secondary-foreground: 214 52% 24%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 213 33% 97%;
+    --muted-foreground: 214 20% 45%;
 
-    /* Blue-green accent - same as primary for consistency */
-    --accent: 168 100% 33%;
-    --accent-foreground: 0 0% 100%;
+    /* Light Blue accent */
+    --accent: 207 33% 77%;
+    --accent-foreground: 214 52% 24%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 185 65% 35%;
+    --border: 213 20% 90%;
+    --input: 213 20% 90%;
+    --ring: 214 52% 24%;
 
     --radius: 0.75rem;
 
     /* Custom colors */
-    --lake-deep: 185 70% 30%;
-    --lake-light: 185 55% 85%;
-    --mountain: 160 35% 35%;
-    --snow: 210 30% 98%;
-    --sand: 40 30% 92%;
-    --sunset: 25 90% 60%;
+    --lake-deep: 214 52% 24%;
+    --lake-light: 207 33% 77%;
+    --mountain: 214 40% 30%;
+    --snow: 213 33% 97%;
+    --sand: 213 33% 97%;
+    --sunset: 207 33% 77%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(185 65% 35% / 0.9), hsl(160 45% 40% / 0.8));
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
-    --gradient-sunset: linear-gradient(135deg, hsl(35 85% 55%), hsl(25 90% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 52% 24% / 0.9), hsl(207 33% 77% / 0.8));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(213 33% 97%));
+    --gradient-sunset: linear-gradient(135deg, hsl(207 33% 77%), hsl(214 52% 24%));
 
     /* Shadows */
-    --shadow-sm: 0 2px 8px -2px hsl(220 20% 15% / 0.08);
-    --shadow-md: 0 8px 24px -8px hsl(220 20% 15% / 0.12);
-    --shadow-lg: 0 16px 48px -12px hsl(220 20% 15% / 0.16);
-    --shadow-glow: 0 0 40px hsl(185 65% 35% / 0.15);
-
+    --shadow-sm: 0 2px 8px -2px hsl(214 52% 24% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(214 52% 24% / 0.12);
+    --shadow-lg: 0 16px 48px -12px hsl(214 52% 24% / 0.16);
+    --shadow-glow: 0 0 40px hsl(214 52% 24% / 0.15);
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -112,14 +111,14 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     @apply font-bold tracking-tight;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 
